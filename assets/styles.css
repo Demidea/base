@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import "_root.css"; 
+
+h1 {
+  color: var(--color1);
+  font-family: var(--font1);
+  font-size: var(--text8);
+}

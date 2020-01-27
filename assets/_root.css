@@ -1,0 +1,57 @@
+:root, [data-theme="default"] {
+  /* colors */
+  --color1: hsl(20, 100%, 50%);
+  --color1-h: 20;
+  --color1-s: 100%;
+  --color1-l: 50%;
+
+  --color2: hsl(140, 100%, 50%);
+  --color2-h: 140;
+  --color2-s: 100%;
+  --color2-l: 50%;
+
+  --color3: hsl(260, 100%, 50%);
+  --color3-h: 260;
+  --color3-s: 100%;
+  --color3-l: 50%;
+
+  --black: hsl(255, 0%, 0%);
+
+  --white: hsl(0, 0%, 100%);
+
+  --red: hsl(0, 100%, 50%);
+
+  --green: hsl(120, 100%, 35%);
+  
+  /* font family */
+  --font1: "Sunflower", Verdana, serif;
+  --font2: "Quicksand", Georgia, sans-serif;
+
+  /* font size */
+  --text-base-size: 1.2em;
+  
+  /* scale */
+  --text-scale-ratio: 1.2;
+  --text1: calc((1.2em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text2: calc(var(--text1) * var(--text-scale-ratio));
+  --text3: calc(var(--text2) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text4: calc(var(--text3) * var(--text-scale-ratio));
+  --text5: calc(var(--text4) * var(--text-scale-ratio));
+  --text6: calc(var(--text5) * var(--text-scale-ratio));
+  --text7: calc(var(--text6) * var(--text-scale-ratio));
+  --text8: calc(var(--text7) * var(--text-scale-ratio));
+
+  /* spacing */
+  --space-unit:  1em;
+  --space-xxxxs: calc(0.125 * var(--space-unit)); 
+  --space-xxxs:  calc(0.25 * var(--space-unit));
+  --space-xxs:   calc(0.375 * var(--space-unit));
+  --space-xs:    calc(0.5 * var(--space-unit));
+  --space-sm:    calc(0.75 * var(--space-unit));
+  --space-md:    calc(1.25 * var(--space-unit));
+  --space-lg:    calc(2 * var(--space-unit));
+  --space-xl:    calc(3.25 * var(--space-unit));
+  --space-xxl:   calc(5.25 * var(--space-unit));
+  --space-xxxl:  calc(8.5 * var(--space-unit));
+  --space-xxxxl: calc(13.75 * var(--space-unit));
+}
