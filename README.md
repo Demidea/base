@@ -1,2 +1,2 @@
 # base
- Basic web syart
+ Creating a base for developing web apps
