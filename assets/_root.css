@@ -1,19 +1,10 @@
 :root, [data-theme="default"] {
   /* colors */
   --color1: hsl(20, 100%, 50%);
-  --color1-h: 20;
-  --color1-s: 100%;
-  --color1-l: 50%;
 
   --color2: hsl(140, 100%, 50%);
-  --color2-h: 140;
-  --color2-s: 100%;
-  --color2-l: 50%;
 
   --color3: hsl(260, 100%, 50%);
-  --color3-h: 260;
-  --color3-s: 100%;
-  --color3-l: 50%;
 
   --black: hsl(255, 0%, 0%);
 
@@ -55,3 +46,4 @@
   --space-xxxl:  calc(8.5 * var(--space-unit));
   --space-xxxxl: calc(13.75 * var(--space-unit));
 }
+

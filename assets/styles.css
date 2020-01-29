@@ -1,9 +1,45 @@
 @charset "UTF-8";
 
-@import "_root.css"; 
+@import "_root.css";
 
-h1 {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  position: fixed;
+	background: var(--color2);
+	float: right;
+	top: 0;
+  right: 0;
+  border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+button {
   color: var(--color1);
-  font-family: var(--font1);
+	font-size: var(--text2);
+	font-family: var(--font1);
+}
+
+#container {
+  padding: var(--space-md);
+}
+
+.title{
+  color: var(--color1);
+  font-family: var(--font2);
   font-size: var(--text8);
+}
+
+.text {
+  font-family: var(--font1);
+	font-size: var(--text3);
+	font-weight: 300;
 }
