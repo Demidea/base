@@ -7,6 +7,14 @@ body {
   padding: 0;
 }
 
+h2 {
+	font-family: var(--font2);
+	color: var(--color3);
+	margin: 0;
+	text-align: center;
+  padding-top: 15px;
+}
+
 ul {
   position: fixed;
 	background: var(--color2);
@@ -22,24 +30,37 @@ li {
   display: inline-flex;
 }
 
-button {
+.button {
   color: var(--color1);
 	font-size: var(--text2);
-	font-family: var(--font1);
+  font-family: var(--font1);
+  background: none;
+	border: 0;
+}
+
+img {
+  border: 1px solid var(--black);
+  margin-top: 20px;
 }
 
 #container {
-  padding: var(--space-md);
+  padding: var(--space-lg) var(--space-sm);
 }
 
 .title{
   color: var(--color1);
   font-family: var(--font2);
   font-size: var(--text8);
+  padding-bottom: 5px;
 }
 
 .text {
   font-family: var(--font1);
 	font-size: var(--text3);
-	font-weight: 300;
+  font-weight: 300;
+  padding-top:  5px;
+}
+
+.image-centered {
+	text-align: center;
 }

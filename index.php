@@ -38,9 +38,7 @@ echo '<!DOCTYPE html><html lang="'.$lang.'">';
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Sunflower:300,500,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<link rel="icon" 
-	      type="image/ico" 
-          href="img/favicon.ico">
+	<link rel="icon" href="img/favicon.ico" type="image/ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/functions.js"></script>
 </head>
