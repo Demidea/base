@@ -2,36 +2,70 @@
 
 @import "_root.css";
 
-body {
+/*--------------------------------------------------------------
+# Normalizar
+--------------------------------------------------------------*/
+/**
+ * 1. Corregir el alto de linea en todos los navegadores.
+ * 2. Prevenir ajustes de tamano de fuente en caso de cambios de orientacion en dispositivos IoS.
+ * 3. Quitar margenes y centrar en todos los navegadores. 
+ */
+ * {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  box-sizing: border-box;
   margin: 0;
+  /* 3 */
   padding: 0;
+  /* 3 */
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none; }
+
+/**
+ * Fondo blanco cuando no hay color definido. Definir tipografia.
+ */
+html {
+  background: var(--color1-10);
 }
 
+/**
+ * Corrige la imposibilidad de clicar en botones en iOS y Safari.
+ */
+ button,
+ [type="button"],
+ [type="reset"],
+ [type="submit"] {
+   -webkit-appearance: button; }
+
+
+/* STYLING TAGS */
 h2 {
 	font-family: var(--font2);
 	color: var(--color3);
 	margin: 0;
 	text-align: center;
-  padding-top: 15px;
 }
 
 ul {
   position: fixed;
-	background: var(--color2);
+	background: var(--color1);
 	float: right;
-	top: 0;
+	top: var(--space-sm);
   right: 0;
   border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
 
 li {
-  list-style-type: none;
   display: inline-flex;
 }
 
 .button {
-  color: var(--color1);
+  color: var(--white);
 	font-size: var(--text2);
   font-family: var(--font1);
   background: none;
@@ -44,13 +78,14 @@ img {
 }
 
 #container {
-  padding: var(--space-lg) var(--space-sm);
+  padding: var(--space-xl) var(--space-md);
 }
 
 .title{
   color: var(--color1);
   font-family: var(--font2);
   font-size: var(--text8);
+  font-weight: 700;
   padding-bottom: 5px;
 }
 
@@ -63,4 +98,54 @@ img {
 
 .image-centered {
 	text-align: center;
+}
+
+/* Login module */
+.login {
+  margin-left: 50px;
+  width: 316px;
+}
+
+form {
+  margin: 25px 15px;
+  color: var(--black);
+  font-family: var(--font2);
+  font-weight: 300;
+}
+
+input[type="text"] {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+
+input[type="password"], textarea {
+  border-radius: 0 0 10px 10px;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px var(--color1) inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--white);
+}
+
+input, select {
+  padding: 3px 15px;
+  border: 1px var(--color1) solid;
+  width: 90%;
+}
+
+textarea {
+  width: 90%;
+  border: 1px var(--color1) solid;
+  padding: 0 5px;
+}
+
+input[type="submit"] {
+  width: auto;
+  border-radius: 10px;
+  background:var(--white);
+  order: 1px var(--color1) solid;
+  margin-top: 15px;
 }

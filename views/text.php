@@ -15,5 +15,9 @@ foreach ($login as $key => $value) {
         echo '<div class='.$value["class"].'>'.$value["text"].'</div>';
     }
 }
-
+if ($page == 'login') {
+    require_once 'login.php';
+} elseif ($page == 'contact') {
+    require_once 'contact.php';
+}
 ?>

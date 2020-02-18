@@ -64,13 +64,18 @@ echo '<!DOCTYPE html><html lang="'.$lang.'">';
                 
                     <div id="container">';
 
-                    $page = 'home';
+                    $page = 'login';
+                    $_POST["user_name"] = null;
 
                     foreach ($login as $key => $value) {
                         if ($value["page"]==$page){
                             echo '<div class='.$value["class"].'>'.$value["text"].'</div>';
                         }
                     }
+                    if ($page === 'login') {
+                        require_once 'views/login.php';
+                    }
+
 ?>
 
 </div>

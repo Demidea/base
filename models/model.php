@@ -30,4 +30,27 @@ class Model{
         $stmt = null;
 
     }
+
+    static public function MdlLogin($table, $data){
+
+        $stmt = Conn::connect()->prepare("INSERT INTO $table(user_name, user_pass) VALUES (:user_name, :user_pass)");
+
+		$stmt->bindParam(":user_name", $data["user_name"], PDO::PARAM_STR);
+		$stmt->bindParam(":user_pass", $data["user_pass"], PDO::PARAM_STR);
+
+        if($stmt->execute()){
+
+			return "ok";	
+
+		}else{
+
+			return "error";
+		
+		}
+
+		$stmt->close();
+		
+		$stmt = null;
+
+    }
 }
