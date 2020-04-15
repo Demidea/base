@@ -2,6 +2,6 @@
 
 $login = Controller::ctrLogin();
 
-header('Location: profile.php');
+header('Location: ../index.php');
 
 ?>

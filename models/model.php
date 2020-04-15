@@ -40,7 +40,7 @@ class Model{
 
         if($stmt->execute()){
 
-			return "ok";	
+            return "ok";
 
 		}else{
 
