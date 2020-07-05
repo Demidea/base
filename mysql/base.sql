@@ -67,7 +67,7 @@ INSERT INTO 'text1' ('id', 'page', 'class', 'text', 'link') VALUES
 (5, 'home', 'text', 'Write plain text or <b>HTML</b> in the database.', NULL),
 (6, 'about-us', 'title', 'About Us', NULL),
 (7, 'about-us', 'text', 'We are the people!', NULL),
-(8, 'contact', 'title', 'Contact us', NULL),
+(8, 'contact', 'title', 'Contact us!, NULL),
 (9, 'contact', 'text', 'This is my email: jose@demidea.com', NULL),
 (10, 'about-us', NULL, '<h2>Another block with no class</h2>', NULL),
 (11, 'about-us', 'text', 'We are using a title with no class, and then we format it applying CSS format directly to \'h2\' tag. We are adding also a break and an image. </br> </br> We center the image applying CSS to this particular class (\'image-centered\') and then we set a border to any image (\'img\' tag):', NULL),
